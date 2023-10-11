@@ -42,6 +42,23 @@ If you have state that's important to retain within a component, consider creati
 ```ts
 // store.ts
 // An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+import { writable } from "svelte/store";
+export default writable(0);
 ```
+
+# some problem i encounter along the way
+
+https://github.com/sveltejs/prettier-plugin-svelte/issues/74
+
+just add svelte extensions in the settings.json
+
+import App from "./App.svelte"; // error here, idk if its is vscode or not
+// but after adding file svelte.d.ts and fill it with
+// below, the error go away, IDK
+/_
+// inside ./src/svelte.d.ts
+declare module "_.svelte";
+\*/
+
+// idk error in importing app, something somethin
+// https://github.com/sveltejs/language-tools/issues/1556
