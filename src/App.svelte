@@ -27,6 +27,10 @@ ex : App.svelte
   import Statements from "./lib/statements/Statements.svelte";
   // updating arr and obj
   import Upd_arr_obj from "./lib/updating_arr_obj/Upd_arr_obj.svelte";
+  // PROPS
+  import Prop_test from "./lib/props/Props_test.svelte";
+  // LOGIC
+  import Logic from "./lib/logic/Logic.svelte";
 </script>
 
 <!-- HTML -->
@@ -88,6 +92,12 @@ ex : App.svelte
   </div>
   <div class="update-arr-obj">
     <Upd_arr_obj />
+  </div>
+  <div class="props">
+    <Prop_test />
+  </div>
+  <div class="logic">
+    <Logic />
   </div>
 </main>
 

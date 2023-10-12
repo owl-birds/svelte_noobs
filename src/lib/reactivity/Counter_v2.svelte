@@ -9,7 +9,7 @@
 </script>
 
 <div>
-  <h4>[{count}]</h4>
+  <h4>REACTIVITY [{count}]</h4>
   <button on:click={increment}> increment </button>
   <button on:click={decrement}> decrement </button>
 </div>
