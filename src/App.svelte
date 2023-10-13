@@ -31,6 +31,8 @@ ex : App.svelte
   import Prop_test from "./lib/props/Props_test.svelte";
   // LOGIC
   import Logic from "./lib/logic/Logic.svelte";
+  // EVENTS
+  import Event from "./lib/events/Events.svelte";
 </script>
 
 <!-- HTML -->
@@ -98,6 +100,9 @@ ex : App.svelte
   </div>
   <div class="logic">
     <Logic />
+  </div>
+  <div class="events">
+    <Event />
   </div>
 </main>
 
