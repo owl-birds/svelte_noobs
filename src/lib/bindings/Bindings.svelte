@@ -63,6 +63,10 @@ Instead, we can use the bind:value directive:
   }
   // GROUP INPUTS
   import Group_input from "./Group_input.svelte";
+  // SELECT MULTIPLE
+  import Select_multiple from "./Select_multiple.svelte";
+  // TEXTAREA
+  import Textarea from "./Textarea.svelte";
 </script>
 
 <h1>BINDINGS</h1>
@@ -137,3 +141,9 @@ Instead, we can use the bind:value directive:
 
 <!-- GROUP INPUT -->
 <Group_input />
+
+<!-- SELECT MULTIPLE -->
+<Select_multiple />
+
+<!-- TEXTAREA -->
+<Textarea />

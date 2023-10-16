@@ -35,6 +35,8 @@ ex : App.svelte
   import Event from "./lib/events/Events.svelte";
   // BINDINGS
   import Bindings from "./lib/bindings/Bindings.svelte";
+  // LIFECYCLE
+  import Lifecycle from "./lib/lifecycle/Lifecycle.svelte";
 </script>
 
 <!-- HTML -->
@@ -108,6 +110,9 @@ ex : App.svelte
   </div>
   <div class="bindings">
     <Bindings />
+  </div>
+  <div class="lifecycle">
+    <Lifecycle />
   </div>
 </main>
 
