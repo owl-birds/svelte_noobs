@@ -14,6 +14,18 @@
   const component_event_handler = (event: { detail: { text: string } }) => {
     alert(event.detail.text + " Component Event");
   };
+  // EVENT FORWARDING
+  import Outer from "./Outer.svelte";
+  const message_event_forward = (event: { detail: { text: string } }) => {
+    //
+    alert(event.detail.text + " EVENT FORWARDING");
+  };
+  // DOM EVENT FORWARDING
+  import Big_red_button from "./Big_red_button.svelte";
+  let is_clicked = false;
+  const dom_event_forwarding = () => {
+    is_clicked = !is_clicked;
+  };
 </script>
 
 <div on:pointermove={handle_move}>
@@ -75,6 +87,19 @@ e.g. on:click|once|capture={...}.
 <!-- COMPONENT EVENTS -->
 <br />
 <Component_events on:message={component_event_handler} />
+
+<!-- EVENT FORWARDING -->
+<Outer on:message={message_event_forward} />
+
+<!-- DOM EVENT FORWARDING -->
+<br />
+<br />
+{#if is_clicked}
+  <div>DOM EVENT FORWARDING</div>
+{/if}
+<br />
+<br />
+<Big_red_button on:click={dom_event_forwarding} />
 
 <style>
   div:nth-child(1) {

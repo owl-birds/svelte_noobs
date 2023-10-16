@@ -33,6 +33,8 @@ ex : App.svelte
   import Logic from "./lib/logic/Logic.svelte";
   // EVENTS
   import Event from "./lib/events/Events.svelte";
+  // BINDINGS
+  import Bindings from "./lib/bindings/Bindings.svelte";
 </script>
 
 <!-- HTML -->
@@ -103,6 +105,9 @@ ex : App.svelte
   </div>
   <div class="events">
     <Event />
+  </div>
+  <div class="bindings">
+    <Bindings />
   </div>
 </main>
 
