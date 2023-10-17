@@ -67,6 +67,11 @@ Instead, we can use the bind:value directive:
   import Select_multiple from "./Select_multiple.svelte";
   // TEXTAREA
   import Textarea from "./Textarea.svelte";
+  //
+  import Display from "./Display.svelte";
+  let is_open = false;
+  let text = "props bindings";
+  let display: Display;
 </script>
 
 <h1>BINDINGS</h1>
@@ -147,3 +152,14 @@ Instead, we can use the bind:value directive:
 
 <!-- TEXTAREA -->
 <Textarea />
+
+<!--  -->
+<hr />
+<Display bind:this={display} bind:is_open bind:text />
+<button
+  on:click={() => {
+    display.bind_this_comp();
+    is_open = !is_open;
+  }}>toggle display</button
+>
+<input type="text" bind:value={text} />
